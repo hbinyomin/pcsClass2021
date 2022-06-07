@@ -1,0 +1,7 @@
+function greeter(person) {
+    return `Hello, ${person}`;
+}
+
+const person = 'Joe Biden';
+
+document.body.innerHTML = person;

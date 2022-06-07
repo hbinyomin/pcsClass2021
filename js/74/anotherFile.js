@@ -1,0 +1,1 @@
+doSomething({ first: 'Joe', last: 'Biden' });

@@ -1,0 +1,18 @@
+<h2>Products</h2>
+<div *ngFor="let product of products">
+  <h3>
+    <!--a title={{product.name}}>{{product.name}}</a-->
+    <a [title]="product.name">{{product.name}}</a>
+  </h3>
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
+  <button (click)="share()" (mousedown)="mouseDown()">share</button>
+
+  <app-product-alerts [product]="product" (notify)="foo()"></app-product-alerts>
+</div>
+
+<!--button disabled={{disabled}}>button #1 with interpolation</button-->
+<!--button [disabled]="disabled">button #1 with interpolation</button-->

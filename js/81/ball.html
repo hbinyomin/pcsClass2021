@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      #addBall {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="addBall">
+      <label>color:
+        <input type="color" id="color">
+      </label>
+      <label>radius:
+        <input type="number" id="radius" min="1" max="200" value="20">
+      </label>
+      <button>add ball</button>
+    </form>
+    <canvas id="theCanvas"></canvas>
+    <script src="ball2.js"></script>
+  </body>
+
+</html>

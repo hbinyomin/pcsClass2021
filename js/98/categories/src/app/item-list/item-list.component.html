@@ -1,0 +1,5 @@
+<li *ngFor="let item of items">
+  <app-item-info [item]="item"></app-item-info>
+</li>
+
+<h3 *ngIf="!items?.length">There are currently no items in the selected category. Please try another</h3>

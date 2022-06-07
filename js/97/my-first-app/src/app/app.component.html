@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+<form #titleForm="ngForm" (ngSubmit)="onSubmit(titleForm.form.value)">
+  <!--input #titleInput [value]="title" (input)="setTitle(titleInput.value)"/-->
+  <input [(ngModel)]="title" required minlength="3" maxlength="10" #titleNg="ngModel" name="title" />
+  <input type="number" [(ngModel)]="foo" name="foo" min="5" max="10" />
+  <button>submit</button>
+</form>
+<div *ngIf="titleNg.invalid">
+  <div *ngIf="titleNg.errors?.['required']">Title is required</div>
+  <div *ngIf="titleNg.errors?.['minlength']">Title must be at least 3 characters</div>
+  <div *ngIf="titleNg.errors?.['maxlength']">Title must be at most 10 characters</div>
+</div>
+<hr />
+<app-order [order]="order"></app-order>
+<hr>
+{{order | json | uppercase}}

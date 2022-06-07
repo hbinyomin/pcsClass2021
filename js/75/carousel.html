@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    #picture {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      vertical-align: middle;
+      margin-top: 1em;
+    }
+
+    .control {
+      font-size: 8em;
+      display: none;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <input id="tag">
+  <button id="go">go</button>
+  <div id="pictures"></div>
+  <span class="control" id="left">&lsaquo;</span>
+  <figure id="picture">
+    <img>
+    <figcaption>
+      <h2></h2>
+    </figcaption>
+  </figure>
+  <span class="control" id="right">&rsaquo;</span>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="carousel.js"></script>
+</body>
+</html>

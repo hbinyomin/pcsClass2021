@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      #addAnts {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="addAnts"">
+      <label>
+        count:
+        <input type="number" id="amount" value="1000" min="1" max="10000">
+      </label>
+      <label>
+        color:
+        <input type="color" id="color" value="#000000">
+      </label>
+      <button>add ants</button>
+    </form>
+    <canvas id="theCanvas"></canvas>
+    <script src="ants.js"></script>
+  </body>
+
+</html>

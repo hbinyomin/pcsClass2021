@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      :checked {
+        height: 36px;
+        width: 36px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--input type="checkbox" id="agree">I agree to the license terms and conditions-->
+    <form id="theForm">
+      <h1>Enter Your Info</h1>
+      <label>Name: <input id="name" name="name" required></label>
+      <label>Address: <input id="address"></label>
+      <button disabled>submit</button>
+    </form>
+
+    <hr>
+    Your name is: <span id="nameResult"></span><br>
+    Your address is: <span id="addressResult"></span>
+
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script-->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="hw.js"></script>
+  </body>
+
+</html>

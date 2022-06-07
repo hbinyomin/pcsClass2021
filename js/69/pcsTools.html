@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1 id="joe">Joe Biden</h1>
+    <h1 id="kamala">Kamala Harris</h1>
+
+    <script src="pcsTools2.js"></script>
+    <script>
+      /*const joe = pcs.tools.get('joe');
+      pcs.tools.setCss(joe, 'color', 'pink');
+
+      const kamala = pcs.tools.get('kamala');
+      pcs.tools.setCss(kamala, 'color', 'yellow');*/
+
+      /*const joe = pcs.tools.wrap('joe');
+      joe.setCss('color', 'pink');
+      console.log(joe.getCss('color'));
+
+      const kamala = pcs.tools.wrap('kamala');
+      kamala.setCss('color', 'yellow');
+      console.log(kamala.getCss('color'));*/
+
+      /*const joe = pcs.tools.wrap('joe');
+      joe.css('color', 'pink');
+      console.log(joe.css('color'));*/
+
+      /*const joe = pcs.tools.wrap('joe')
+                    .css('color', 'pink')
+                    .click(() => {
+                      console.log('joe was clicked');
+                      joe.hide();
+                      setTimeout(() => joe.show(), 2000);
+                    })
+                    .hide();
+      setTimeout(() => joe.show(), 2000);
+
+      const kamala = pcs.tools.wrap('kamala');
+      kamala.css('color', 'yellow');
+      console.log(kamala.css('color'));*/
+
+      /*joe.click(() => {
+        console.log('joe was clicked');
+        joe.hide();
+        setTimeout(() => joe.show(), 2000);
+      });*/
+
+      const joe = pcs('joe')
+        .css('color', 'pink')
+        .click(() => {
+          console.log('joe was clicked');
+          joe.hide();
+          setTimeout(() => joe.show(), 2000);
+        })
+        .hide();
+      setTimeout(() => joe.show(), 2000);
+
+      const kamala = pcs('kamala');
+      kamala.css('color', 'yellow');
+      console.log(kamala.css('color'));
+      kamala.click(() => console.log('kamala was clicked'));
+    </script>
+  </body>
+
+</html>

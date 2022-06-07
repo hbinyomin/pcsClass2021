@@ -1,0 +1,15 @@
+<div>
+  name: {{person.firstName}} {{person.lastName | lowercase}} <br>
+  birthdate: {{person.birthdate | date:'yyyy G'}} <br>
+  <app-address [address]="person.address"></app-address>
+  <h5>
+    friends:
+  </h5>
+  <ul>
+    <li *ngFor="let friend of person.friends; let i = index;">
+      {{friend}} <button (click)="removeFriend(i)">remove</button>
+    </li>
+  </ul>
+  <!--input (change)="addFriend($event)"/><button>add friend</button-->
+  <input #friendName/><button (click)="addFriend(friendName.value)">add friend</button>
+</div>

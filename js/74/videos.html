@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body, html, #sidebar {
+        height: 100%;
+        margin: 0;
+      }
+
+      #sidebar, video {
+        float: left;
+      }
+
+      #sidebar {
+        width: 25%;
+        border-right: 1px solid black;
+        box-sizing: border-box;
+        overflow-y: auto;
+      }
+
+      #sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      #sidebar li {
+        border: 1px solid black;
+        margin-bottom: 1em;
+        cursor: pointer;
+      }
+
+      #sidebar li:hover {
+        background-color: #eee;
+        color: red;
+      }
+
+      #sidebar span {
+        width: 40%;
+        display: inline-block;
+        padding-left: 1em;
+      }
+
+      #sidebar img {
+        width: 40%;
+        height: 100px;
+        vertical-align: middle;
+        margin-left: 1em;
+      }
+
+      video {
+        width: 75%;
+      }
+
+      .watched {
+        color: gray;
+        font-style: italic;
+      }
+
+      .active {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="sidebar">
+      <ul></ul>
+    </div>
+    <video id="video" autoplay></video>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="videos.js"></script>
+  </body>
+
+</html>

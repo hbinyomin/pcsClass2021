@@ -1,0 +1,9 @@
+<h1>PCS Store</h1>
+<h2>Select a category</h2>
+<app-category-list [categories]="categories" [selectedIndex]="selectedIndex" (selectedIndexChanged)="selectedIndexChanged($event)"></app-category-list>
+
+<h2>Items</h2>
+<ul>
+  <app-item-list [items]="categories[selectedIndex].items"></app-item-list>
+</ul>
+

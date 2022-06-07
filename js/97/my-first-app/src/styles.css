@@ -1,0 +1,12 @@
+body {
+  width: 80%;
+  margin: auto;
+}
+
+.ng-invalid:not(form) {
+  border-left: 1em solid red;
+}
+
+.ng-valid:not(form) {
+  border-left: 1em solid green;
+}
